@@ -1,0 +1,17 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+            <h1>Online Food Ordering Service</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="card col-md-6 col-sm-12 offset-md-1 p-5 text-center orange lighten-5">
+            <h2 style="color: midnightblue;">Place an Order!</h2>
+            <a href="{% url 'order' %}" class="btn peach-gradient">Order Now!</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
